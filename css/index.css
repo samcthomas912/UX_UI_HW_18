@@ -1,0 +1,182 @@
+.nav{
+    height: 80px;
+    background-color: #FAFAF6;
+    color: #031926;
+    padding-right:30px;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", "Arial", sans-serif;
+}
+
+.nav_buttons{
+    display: block;
+    padding: 20px;
+    float: right;
+}
+
+.hi{
+    position: relative;
+    left: 60px;
+    top: 40px;
+}
+
+p{
+    font-size: 20px;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", "Arial", sans-serif;
+    color: #031926;
+}
+
+.about{
+    width: 500px;
+    position: relative;
+    left: 180px;
+    top: -20px;
+}
+
+/* Hero Section */
+
+.hero{
+    height: 400px;
+    background-color: #FAFAF6;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.hero img{
+    height: 400px;
+    position: absolute;
+    padding-right: 105px;
+}
+
+img{
+    height: 400px;
+    position: absolute;
+}
+
+.left{
+    float:left;
+    padding-right: 20px;
+}
+
+.back{
+    height: 340px;
+    background-color: #F9F3DC;
+    width: 100%;
+}
+
+.myname h1{
+    position: relative;
+    color: #BD4F6C;
+    text-shadow: 2px 2px #03192631;
+    top: 20px;
+    left: 100px;
+}
+
+/* Case Study Section */
+
+.my_work{
+    display: flex;
+    flex-direction: column;
+    height: 90%px;
+    background-color: #FAFAF6;
+}
+
+.case_study{
+    height: 400px;
+    padding-top:50px;
+    padding-left: 140px;
+    padding-bottom: 150px;
+    display: flex;
+    float: right;
+}
+
+.case_study img{
+    position: relative;
+    float: left;
+    padding-left: 50px;
+}
+
+.description{
+    width: 500px;
+    padding-left: 30px;
+    padding-top: 100px;
+}
+
+.title{
+    position: absolute;
+    text-shadow: 2px 2px #03192631;
+    padding-left: 380px;
+}
+
+h1{
+    font-size: 50px;
+    font-family: "Khmer MN", "Ogirema", "Times Sans Serif", sans-serif;
+    color: #031926;
+}
+
+/* footer */
+
+footer{
+background-color:#93B5C6;
+height: 200px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+footer img{
+    height: 40px;
+    padding-bottom:10px;
+}
+
+footer p{
+    font-size: 16px;
+    text-align: center;
+}
+
+h2{
+    font-size: 30px;
+    font-family: "Khmer MN", "Ogirema", "Times Sans Serif", sans-serif;
+    color: #031926; 
+}
+
+/* test */
+.casestudy{
+    height: 600px;
+}
+
+.left{
+    float: left;
+    padding-right: 15px;
+}
+
+.casestudy p{
+    position: relative;
+}
+
+.casestudy img{
+    position:relative;
+    float: left;
+}
+
+.casestudy h1{
+    position: relative;
+}
+
+
+
+  .separator p{
+      position: relative;
+      width: 900px;
+      padding-left: 100px;
+  }
+
+  .separator h1{
+      position: relative;
+      justify-content: center;
+  }
+  .separator img{
+      position: relative;
+      float: left;
+      padding-left:100px;
+  }

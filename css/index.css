@@ -82,51 +82,8 @@ img{
     position: relative;
   }
 
+/*Case Studies Section*/
 
-/* Case Study Section */
-
-.my_work{
-    display: flex;
-    flex-direction: column;
-    height: 90%px;
-    background-color: #FAFAF6;
-    
-}
-
-.case_study{
-    height: 400px;
-    padding-top:80px;
-    padding-left: 130px;
-    padding-bottom: 100px;
-    display: flex;
-    float: right;
-}
-
-.case_study img{
-    position: relative;
-    float: left;
-    padding-left: 50px;
-}
-
-.description{
-    width: 500px;
-    padding-left: 30px;
-    padding-top: 100px;
-}
-
-.title{
-    position: absolute;
-    text-shadow: 2px 2px #03192631;
-    padding-left: 380px;
-}
-
-h1{
-    font-size: 50px;
-    font-family: "Khmer MN", "Ogirema", "Times Sans Serif", sans-serif;
-    color: #031926;
-}
-
-/*case studies test*/
 #caseGrid {
     margin: 0px 5%;
     display: grid;
@@ -177,6 +134,12 @@ h1{
     padding-left: 30px;
   }
   
+  h1{
+    font-size: 50px;
+    font-family: "Khmer MN", "Ogirema", "Times Sans Serif", sans-serif;
+    color: #031926;
+}
+
   #headline {
     background-color:#F0CF65;
     position: absolute;
@@ -214,7 +177,7 @@ align-items: center;
 
 footer img{
     height: 40px;
-    padding-bottom:10px;
+    padding-bottom:25px;
 }
 
 footer p{

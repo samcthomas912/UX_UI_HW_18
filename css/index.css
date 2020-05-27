@@ -1,8 +1,13 @@
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 .nav{
-    height: 80px;
+    height: 100px;
     background-color: #FAFAF6;
     color: #031926;
-    padding-right:30px;
+    padding-right:60px;
     font-family: "Lucida Sans Unicode", "Lucida Grande", "Arial", sans-serif;
 }
 
@@ -10,12 +15,11 @@
     display: block;
     padding: 20px;
     float: right;
+    cursor: pointer;
 }
 
-.hi{
-    position: relative;
-    left: 60px;
-    top: 40px;
+.nav_buttons:hover{
+    text-decoration: underline;
 }
 
 p{
@@ -24,52 +28,60 @@ p{
     color: #031926;
 }
 
-.about{
-    width: 500px;
-    position: relative;
-    left: 180px;
-    top: -20px;
-}
 
 /* Hero Section */
 
-.hero{
-    height: 400px;
-    background-color: #FAFAF6;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-}
 
-.hero img{
-    height: 400px;
-    position: absolute;
-    padding-right: 105px;
-}
 
 img{
     height: 400px;
     position: absolute;
 }
 
-.left{
-    float:left;
-    padding-right: 20px;
+.link{
+    cursor: pointer;
+    font-size: 16px;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", "Arial", sans-serif;
+    color: #93B5C6;
 }
 
-.back{
-    height: 340px;
-    background-color: #F9F3DC;
-    width: 100%;
+.link:hover{
+    text-decoration: underline;
 }
 
-.myname h1{
+.aboutMe {
+    width: 50%;
+    padding-left: 30px;
+  }
+
+  .samThomas{
+      padding-left:30px;
+      text-shadow: 2px 2px #03192631;
+      margin: 0px;
+  }
+
+  .samThomas h1{
+    color: #BD4F6C; 
+    margin:0px;
+  }
+
+  .myBio{
+      padding-left: 60px;
+  }
+
+  .right {
+    width: 50%;
+    padding-left: 30px;
+    padding-right:30px;
+  }
+  .heroSection {
+    height: 380px;
+    padding: 30px;
+    margin: 10px;
+    display: flex;
     position: relative;
-    color: #BD4F6C;
-    text-shadow: 2px 2px #03192631;
-    top: 20px;
-    left: 100px;
-}
+  }
+
 
 /* Case Study Section */
 
@@ -78,13 +90,14 @@ img{
     flex-direction: column;
     height: 90%px;
     background-color: #FAFAF6;
+    
 }
 
 .case_study{
     height: 400px;
-    padding-top:50px;
-    padding-left: 140px;
-    padding-bottom: 150px;
+    padding-top:80px;
+    padding-left: 130px;
+    padding-bottom: 100px;
     display: flex;
     float: right;
 }
@@ -113,14 +126,89 @@ h1{
     color: #031926;
 }
 
+/*case studies test*/
+#caseGrid {
+    margin: 0px 5%;
+    display: grid;
+    min-height: 500px;
+    grid-template-rows: 30% 70%;
+    grid-template-columns: 50% 50%;
+    grid-template-areas:
+    "img title"
+    "img des";
+    background-color: #FAFAF6;
+    padding: 50px;
+  }
+
+  #caseGrid2 {
+    margin: 0px 5%;
+    display: grid;
+    min-height: 500px;
+    grid-template-rows: 30% 70%;
+    grid-template-columns: 50% 50%;
+    grid-template-areas:
+    "img2 title"
+    "img2 des";
+    background-color: #FAFAF6;
+    padding: 50px;
+  }
+  
+  body{
+    background-color: #FAFAF6;
+  }
+
+  #prototypeImage {
+    grid-area: img;
+    background-image: url(../images/ecr.png);
+  }
+
+  #prototypeImage2 {
+    grid-area: img2;
+    background-image: url(../images/depofed.png);
+  }
+  
+  #projectTitle {
+    grid-area: title;
+    padding-top: 43px;
+  }
+  
+  #description {
+    grid-area: des;
+    padding-left: 30px;
+  }
+  
+  #headline {
+    background-color:#F0CF65;
+    position: absolute;
+    width: 600px;
+    right: 5px;
+    padding-left: 40px;
+    padding-top: 20px;
+    z-index: 100;
+    height: 80px;
+    margin: 0px;
+    display:flex;
+    align-items: center;
+    box-shadow: 5px 5px 5px rgba(49, 49, 49, 0.13);
+  }
+  
+  .caseGridArea {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    position: relative;
+  }
+
+
 /* footer */
 
 footer{
 background-color:#93B5C6;
-height: 200px;
+height: 250px;
 display: flex;
 flex-direction: column;
-justify-content: center;
+justify-content: space-around;
 align-items: center;
 }
 
@@ -132,6 +220,7 @@ footer img{
 footer p{
     font-size: 16px;
     text-align: center;
+    line-height: 23px;
 }
 
 h2{
@@ -140,43 +229,9 @@ h2{
     color: #031926; 
 }
 
-/* test */
-.casestudy{
-    height: 600px;
+/* responsive */
+
+@media only screen and (max-width: 1200px){
+
 }
 
-.left{
-    float: left;
-    padding-right: 15px;
-}
-
-.casestudy p{
-    position: relative;
-}
-
-.casestudy img{
-    position:relative;
-    float: left;
-}
-
-.casestudy h1{
-    position: relative;
-}
-
-
-
-  .separator p{
-      position: relative;
-      width: 900px;
-      padding-left: 100px;
-  }
-
-  .separator h1{
-      position: relative;
-      justify-content: center;
-  }
-  .separator img{
-      position: relative;
-      float: left;
-      padding-left:100px;
-  }

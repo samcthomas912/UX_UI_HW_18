@@ -54,6 +54,10 @@ img{
     padding-left: 30px;
   }
 
+  .mobileImage{
+      display:none;
+  }
+
   .samThomas{
       padding-left:30px;
       text-shadow: 2px 2px #03192631;
@@ -82,6 +86,11 @@ img{
     position: relative;
   }
 
+  .heroSection img{
+      top: -20px;
+  }
+
+
 /*Case Studies Section*/
 
 #caseGrid {
@@ -108,6 +117,7 @@ img{
     "img2 des";
     background-color: #FAFAF6;
     padding: 50px;
+    padding-bottom: 100px;
   }
   
   body{
@@ -194,7 +204,154 @@ h2{
 
 /* responsive */
 
-@media only screen and (max-width: 1200px){
+@media only screen and (max-width: 900px){
+
+    /* navigation */
+
+    .nav{
+        padding-right:0px;
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .nav_buttons{
+        padding-top: 20px;
+    }
+
+    /* Hero Section */
+
+img{
+    height: 350px;
+}
+
+.mobileImage{
+    display:flex;
+}
+
+.heroSection {
+    height: 600px;
+    padding: 30px;
+    margin: 10px;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 0px;
+  }
+
+  .heroSection img{
+      top: 0px;
+      position: relative;
+  }
+
+
+.aboutMe {
+    width: 80%;
+    padding-left: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .samThomas{
+      padding-left:0px;
+      margin: 0px;
+  }
+
+  .samThomas h1{
+    margin:0px;
+  }
+
+  .myBio{
+      padding-left: 0px;
+  }
+
+  .right {
+    display: none; /* hide the image */
+  }
+
+  /* Case Studies */ 
+  #caseGrid {
+    margin: 0px 5%;
+    display: grid;
+    min-height: 500px;
+    grid-template-rows: 10% 70% 20%;
+    grid-template-columns: 100%;
+    grid-template-areas:
+    "title"
+    "img" 
+    "des";
+    background-color: #FAFAF6;
+    padding: 0px;
+    padding-top: 130px;
+    padding-bottom: 50px;
+  }
+
+  #headline {
+    position: relative;
+    width: 600px;
+    padding-top: 20px;
+    z-index: 100;
+    height: 80px;
+    margin: 0px;
+    justify-content: center;
+    right: 0px;
+    padding-left: 0px;
 
 }
 
+#projectTitle {
+    padding-top: 60px;
+    display: flex;
+    justify-content: center;
+  }
+
+  #prototypeImage {
+      margin-left: 50px;
+      margin-right: 50px;
+  }
+
+  #caseGrid2 {
+    margin: 0px 5%;
+    display: grid;
+    min-height: 500px;
+    grid-template-rows: 10% 70% 20%;
+    grid-template-columns: 100%;
+    grid-template-areas:
+    "title"
+    "img2" 
+    "des";
+    background-color: #FAFAF6;
+    padding: 0px;
+    padding-top: 130px;
+    padding-bottom: 160px;
+  }
+
+
+#projectTitle2 {
+    padding-top: 60px;
+    display: flex;
+    justify-content: center;
+  }
+
+  #prototypeImage2 {
+      margin-left: 50px;
+      margin-right: 50px;
+  }
+
+}
+
+@media only screen and (max-width: 620px){
+    .caseGridArea h1{
+        font-size:30px;
+    }
+
+    #headline{
+        height: 60px;
+    }
+
+    p{
+        font-size: 18px;
+    }
+}

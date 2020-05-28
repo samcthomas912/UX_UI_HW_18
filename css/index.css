@@ -343,8 +343,8 @@ img{
 }
 
 @media only screen and (max-width: 620px){
-    .caseGridArea h1{
-        font-size:30px;
+    h1{
+        font-size:28px;
     }
 
     #headline{
@@ -353,5 +353,13 @@ img{
 
     p{
         font-size: 18px;
+    }
+
+    img{
+        height: 300px;
+    }
+
+    #caseGrid{
+        padding-top: 30px;
     }
 }

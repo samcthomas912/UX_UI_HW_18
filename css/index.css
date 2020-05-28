@@ -210,12 +210,18 @@ h2{
 
     .nav{
         padding-right:0px;
+        padding-left:0px;
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
     }
     
     .nav_buttons{
         padding-top: 20px;
+        text-align: center;
+    }
+
+    ul{
+      padding-inline-start: 0px;
     }
 
     /* Hero Section */
